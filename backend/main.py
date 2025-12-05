@@ -20,6 +20,8 @@ def create_user(user: UserCreate, db: Session = Depends(get_db)):
         parent_phone=user.parent_phone,
         batch=user.batch,
         upi_id=user.upi_id,
+        password=user.password,
+
         status="pending"
     )
     db.add(new_user)

@@ -9,4 +9,6 @@ class User(Base):
     parent_phone = Column(String, unique=True, nullable=False)
     batch = Column(String, nullable=False)
     upi_id = Column(String, nullable=False)
+    password = Column(String, nullable=False)
+
     status = Column(String, default="pending")

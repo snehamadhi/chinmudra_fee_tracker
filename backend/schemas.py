@@ -5,3 +5,4 @@ class UserCreate(BaseModel):
     parent_phone: str
     batch: str
     upi_id: str
+    password: str
